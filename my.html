@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | To-Do List</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <div class="header">
+            <div>
+                <p class="eyebrow">MY PRODUCTIVITY</p>
+                <h1>TaskFlow</h1>
+                <p class="subtitle">Stay focused. Get things done.</p>
+            </div>
+
+            <div class="task-count">
+                <span id="taskCount">0</span>
+                <small>tasks</small>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What needs to be done?"
+                autocomplete="off"
+            >
+
+            <button id="addBtn">+</button>
+        </div>
+
+        <div class="list-header">
+            <span>Your Tasks</span>
+
+            <button id="clearBtn">
+                Clear completed
+            </button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="empty-state" id="emptyState">
+            <div class="empty-icon">✓</div>
+            <h2>You're all caught up</h2>
+            <p>Add a task above and start getting things done.</p>
+        </div>
+
+    </main>
+
+    <script src="my.js"></script>
+
+</body>
+</html>
